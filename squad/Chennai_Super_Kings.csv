@@ -1,0 +1,26 @@
+,id,name,role,battingStyle,bowlingStyle,country,playerImg
+0,4f95ebbb-226b-4bef-bd2c-02daec890ba4,Shaik Rasheed,Batsman,Right Handed Bat,Right-arm legbreak,India,https://h.cricapi.com/img/icon512.png
+1,81b446e1-bfea-45a7-a15e-062b8157a323,Ravindra Jadeja,Bowling Allrounder,Left Handed Bat,Left-arm orthodox,India,https://h.cricapi.com/img/players/81b446e1-bfea-45a7-a15e-062b8157a323.jpg
+2,58139def-7c4a-4cc2-a09a-0caff43b43dd,Kamlesh Nagarkoti,Bowler,Right Handed Bat,Right-arm fast,India,https://h.cricapi.com/img/players/58139def-7c4a-4cc2-a09a-0caff43b43dd.jpg
+3,de60a340-5eb8-4160-861e-182aafd279c5,Vijay Shankar,Batting Allrounder,Right Handed Bat,Right-arm medium,India,https://h.cricapi.com/img/players/de60a340-5eb8-4160-861e-182aafd279c5.jpg
+4,9d8be8e7-4218-400f-919a-211415490575,Jamie Overton,Bowler,Right Handed Bat,Right-arm fast,England,https://h.cricapi.com/img/icon512.png
+5,262742b4-290f-4603-b461-22cff621a9fb,Vansh Bedi,WK-Batsman,Right Handed Bat,,India,https://h.cricapi.com/img/icon512.png
+6,b65be7fe-33cd-41d1-b601-31f25b4f72a4,Shreyas Gopal,Bowler,Right Handed Bat,Right-arm legbreak,India,https://h.cricapi.com/img/players/b65be7fe-33cd-41d1-b601-31f25b4f72a4.jpg
+7,92272f2e-18d9-49e4-9b9e-34e1ab308731,Andre Siddarth C,Batsman,Right Handed Bat,,India,https://h.cricapi.com/img/icon512.png
+8,c553c840-d84c-4a9f-a714-406ffe44f1e9,Gurjapneet Singh,Bowler,Right Handed Bat,Left-arm fast-medium,India,https://h.cricapi.com/img/icon512.png
+9,b6e7aa41-b0bb-4b0f-8f59-59f729283be5,MS Dhoni,WK-Batsman,Right Handed Bat,Right-arm medium,India,https://h.cricapi.com/img/players/b6e7aa41-b0bb-4b0f-8f59-59f729283be5.jpg
+10,0068c9d8-be69-46b9-bbef-62c74e480781,Ravichandran Ashwin,Bowling Allrounder,Right Handed Bat,Right-arm offbreak,India,https://h.cricapi.com/img/players/0068c9d8-be69-46b9-bbef-62c74e480781.jpg
+11,cbe808da-727a-4d9c-b3be-6eb431217483,Anshul Kamboj,Bowling Allrounder,Right Handed Bat,Right-arm fast-medium,India,https://h.cricapi.com/img/icon512.png
+12,fb313a9a-0a14-499d-a8d1-7561bccea8cb,Rahul Tripathi,Batsman,Right Handed Bat,Right-arm medium,India,https://h.cricapi.com/img/players/fb313a9a-0a14-499d-a8d1-7561bccea8cb.jpg
+13,dc2f7f59-ce15-48aa-b7d9-793314961076,Mukesh Choudhary,Bowler,Left Handed Bat,Left-arm fast-medium,India,https://h.cricapi.com/img/icon512.png
+14,d59bfc6b-bf4c-4a23-aa82-954911b0973d,Matheesha Pathirana,Bowler,Right Handed Bat,Right-arm fast,Sri Lanka,https://h.cricapi.com/img/icon512.png
+15,e6d28951-8524-43ca-95cf-9e73ae68bc12,Rachin Ravindra,Batting Allrounder,Left Handed Bat,Left-arm orthodox,New Zealand,https://h.cricapi.com/img/players/e6d28951-8524-43ca-95cf-9e73ae68bc12.jpg
+16,50b70c71-1535-41c0-87fd-c12883105ede,Ruturaj Gaikwad,Batsman,Right Handed Bat,Right-arm offbreak,India,https://h.cricapi.com/img/players/50b70c71-1535-41c0-87fd-c12883105ede.jpg
+17,22ee45d8-0538-4e3e-a758-c515f9b86d11,Shivam Dube,Batting Allrounder,Left Handed Bat,Right-arm medium,India,https://h.cricapi.com/img/players/22ee45d8-0538-4e3e-a758-c515f9b86d11.jpg
+18,3cbc5a08-62af-4ca5-b709-c7712db6e8b6,Noor Ahmad,Bowler,Right Handed Bat,Left-arm wrist-spin,Afghanistan,https://h.cricapi.com/img/players/3cbc5a08-62af-4ca5-b709-c7712db6e8b6.jpg
+19,f63eb69e-f17e-4d88-bf2b-d91af645c52c,Ramakrishna Ghosh,Batting Allrounder,Right Handed Bat,Right-arm fast-medium,India,https://h.cricapi.com/img/icon512.png
+20,45613012-5c4f-4a7a-a1c4-d9827939b2bf,Sam Curran,Bowling Allrounder,Left Handed Bat,Left-arm fast-medium,England,https://h.cricapi.com/img/players/45613012-5c4f-4a7a-a1c4-d9827939b2bf.jpg
+21,8df6183b-1c95-46d2-85c0-e185792d03f1,Khaleel Ahmed,Bowler,Right Handed Bat,Left-arm fast-medium,India,https://h.cricapi.com/img/players/8df6183b-1c95-46d2-85c0-e185792d03f1.jpg
+22,47109b0d-51f0-4a49-931e-e31bf77e69f5,Deepak Hooda,Batting Allrounder,Right Handed Bat,Right-arm offbreak,India,https://h.cricapi.com/img/players/47109b0d-51f0-4a49-931e-e31bf77e69f5.jpg
+23,eac0032b-055a-497b-9d4e-f54008414515,Devon Conway,WK-Batsman,Left Handed Bat,Right-arm medium,New Zealand,https://h.cricapi.com/img/players/eac0032b-055a-497b-9d4e-f54008414515.jpg
+24,6731db45-8132-49c6-8fcb-f59258d15082,Nathan Ellis,Bowler,Right Handed Bat,Right-arm fast-medium,Australia,https://h.cricapi.com/img/players/6731db45-8132-49c6-8fcb-f59258d15082.jpg
