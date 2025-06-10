@@ -1,0 +1,75 @@
+,MatchID,MatchName,MatchNumber,MatchType,MatchVenue,MatchDate,MatchDateTime,MatchStarted,MatchEnded
+0,cacf2d34-41b8-41dd-91ed-5183d880084c,Kolkata Knight Riders vs Royal Challengers Bengaluru,1,t20,"Eden Gardens, Kolkata",2025-03-22,2025-03-22 14:00:00,True,True
+1,91b007f3-c0af-493f-808a-3f4ae2d66e33,Sunrisers Hyderabad vs Rajasthan Royals,2,t20,"Rajiv Gandhi International Stadium, Hyderabad",2025-03-23,2025-03-23 10:00:00,True,True
+2,208d68e5-3fab-4f3b-88e9-29ec4a02d3e2,Chennai Super Kings vs Mumbai Indians,3,t20,"MA Chidambaram Stadium, Chennai",2025-03-23,2025-03-23 14:00:00,True,True
+3,c6e97609-d9c1-46eb-805a-e282b34f3bb1,Delhi Capitals vs Lucknow Super Giants,4,t20,"Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",2025-03-24,2025-03-24 14:00:00,True,True
+4,83d70527-5fc4-4fad-8dd2-b88b385f379e,Gujarat Titans vs Punjab Kings,5,t20,"Narendra Modi Stadium, Ahmedabad",2025-03-25,2025-03-25 14:00:00,True,True
+5,fd459f45-6e79-42c5-84e4-d046f291cacf,Rajasthan Royals vs Kolkata Knight Riders,6,t20,"Barsapara Cricket Stadium, Guwahati",2025-03-26,2025-03-26 14:00:00,True,True
+6,ab4e0813-1e78-467e-aca0-d80c5cfe7dbd,Sunrisers Hyderabad vs Lucknow Super Giants,7,t20,"Rajiv Gandhi International Stadium, Hyderabad",2025-03-27,2025-03-27 14:00:00,True,True
+7,7431523f-7ccb-4a4a-aed7-5c42fc08464c,Chennai Super Kings vs Royal Challengers Bengaluru,8,t20,"MA Chidambaram Stadium, Chennai",2025-03-28,2025-03-28 14:00:00,True,True
+8,f5ed540f-15c7-4189-a5d4-e54be746a522,Gujarat Titans vs Mumbai Indians,9,t20,"Narendra Modi Stadium, Ahmedabad",2025-03-29,2025-03-29 14:00:00,True,True
+9,af5cf1dd-b3d4-4e8d-8660-e5e27cd5202e,Delhi Capitals vs Sunrisers Hyderabad,10,t20,"Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",2025-03-30,2025-03-30 10:00:00,True,True
+10,057ce3fb-8117-47fe-bf25-be0ed8a56dd0,Rajasthan Royals vs Chennai Super Kings,11,t20,"Barsapara Cricket Stadium, Guwahati",2025-03-30,2025-03-30 14:00:00,True,True
+11,075649ef-6ca8-4f50-8143-87814b828ea0,Mumbai Indians vs Kolkata Knight Riders,12,t20,"Wankhede Stadium, Mumbai",2025-03-31,2025-03-31 14:00:00,True,True
+12,7896feec-8fd6-44ef-aee3-eabb679e6305,Lucknow Super Giants vs Punjab Kings,13,t20,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2025-04-01,2025-04-01 14:00:00,True,True
+13,64e88ffc-606f-4d4f-b848-310f1ec7a98a,Royal Challengers Bengaluru vs Gujarat Titans,14,t20,"M.Chinnaswamy Stadium, Bengaluru",2025-04-02,2025-04-02 14:00:00,True,True
+14,d5915da0-c08b-4122-bcb0-2c2e1e6e168a,Kolkata Knight Riders vs Sunrisers Hyderabad,15,t20,"Eden Gardens, Kolkata",2025-04-03,2025-04-03 14:00:00,True,True
+15,5dc7a22f-5057-4895-bb98-965d9a1f004e,Lucknow Super Giants vs Mumbai Indians,16,t20,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2025-04-04,2025-04-04 14:00:00,True,True
+16,f5dabb5b-a934-4666-a368-7134e991f569,Chennai Super Kings vs Delhi Capitals,17,t20,"MA Chidambaram Stadium, Chennai",2025-04-05,2025-04-05 10:00:00,True,True
+17,b2e603ab-96f7-4711-ac9f-6a78e742237d,Punjab Kings vs Rajasthan Royals,18,t20,"Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, Chandigarh",2025-04-05,2025-04-05 14:00:00,True,True
+18,3027ad1a-e7d8-4891-8ea0-1a56f81e8700,Sunrisers Hyderabad vs Gujarat Titans,19,t20,"Rajiv Gandhi International Stadium, Hyderabad",2025-04-06,2025-04-06 14:00:00,True,True
+19,0a5ebe67-67a3-41d2-bbc8-5fc94aef0529,Mumbai Indians vs Royal Challengers Bengaluru,20,t20,"Wankhede Stadium, Mumbai",2025-04-07,2025-04-07 14:00:00,True,True
+20,2ac97990-6265-40e4-b93e-fcd24e89026c,Kolkata Knight Riders vs Lucknow Super Giants,21,t20,"Eden Gardens, Kolkata",2025-04-08,2025-04-08 10:00:00,True,True
+21,56a88e0e-e844-41bd-ba65-3c905e36ba0d,Punjab Kings vs Chennai Super Kings,22,t20,"Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, Chandigarh",2025-04-08,2025-04-08 14:00:00,True,True
+22,71213f27-c274-48b0-97f7-ec74e895dcbe,Gujarat Titans vs Rajasthan Royals,23,t20,"Narendra Modi Stadium, Ahmedabad",2025-04-09,2025-04-09 14:00:00,True,True
+23,3f309c2d-75dd-48bc-9d9f-e3979e252949,Royal Challengers Bengaluru vs Delhi Capitals,24,t20,"M.Chinnaswamy Stadium, Bengaluru",2025-04-10,2025-04-10 14:00:00,True,True
+24,b39bbd39-c67f-4892-9a48-02e958946718,Chennai Super Kings vs Kolkata Knight Riders,25,t20,"MA Chidambaram Stadium, Chennai",2025-04-11,2025-04-11 14:00:00,True,True
+25,35938151-73ee-4969-8153-db8aabee3b90,Lucknow Super Giants vs Gujarat Titans,26,t20,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2025-04-12,2025-04-12 10:00:00,True,True
+26,b13f129b-2596-429d-ad49-a1b0d102809b,Sunrisers Hyderabad vs Punjab Kings,27,t20,"Rajiv Gandhi International Stadium, Hyderabad",2025-04-12,2025-04-12 14:00:00,True,True
+27,953420f4-982c-4dcb-b8f7-bbda5acd438d,Rajasthan Royals vs Royal Challengers Bengaluru,28,t20,"Sawai Mansingh Stadium, Jaipur",2025-04-13,2025-04-13 10:00:00,True,True
+28,99c52578-1257-4834-9848-88cfec556836,Delhi Capitals vs Mumbai Indians,29,t20,"Arun Jaitley Stadium, Delhi",2025-04-13,2025-04-13 14:00:00,True,True
+29,263c1103-33c0-4c05-864f-5dbcd29ead9b,Lucknow Super Giants vs Chennai Super Kings,30,t20,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2025-04-14,2025-04-14 14:00:00,True,True
+30,23f60d1b-2641-4a84-bb73-54d3aadfb294,Punjab Kings vs Kolkata Knight Riders,31,t20,"Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, Chandigarh",2025-04-15,2025-04-15 14:00:00,True,True
+31,3659022a-de1d-48fe-b68a-c62197297408,Delhi Capitals vs Rajasthan Royals,32,t20,"Arun Jaitley Stadium, Delhi",2025-04-16,2025-04-16 14:00:00,True,True
+32,71756de6-bdef-4b23-801f-c6bec9604e07,Mumbai Indians vs Sunrisers Hyderabad,33,t20,"Wankhede Stadium, Mumbai",2025-04-17,2025-04-17 14:00:00,True,True
+33,ebce77ae-63e1-46eb-8ff4-360ba8dc9bf2,Royal Challengers Bengaluru vs Punjab Kings,34,t20,"M.Chinnaswamy Stadium, Bengaluru",2025-04-18,2025-04-18 14:00:00,True,True
+34,71666b6c-a6f9-4e09-a9d9-7f3ddca832d6,Gujarat Titans vs Delhi Capitals,35,t20,"Narendra Modi Stadium, Ahmedabad",2025-04-19,2025-04-19 10:00:00,True,True
+35,a007a070-6120-4e37-8bf9-c9582801a20b,Rajasthan Royals vs Lucknow Super Giants,36,t20,"Sawai Mansingh Stadium, Jaipur",2025-04-19,2025-04-19 14:00:00,True,True
+36,4ace6d56-2e54-473e-a3c1-8bfcd06da6e2,Punjab Kings vs Royal Challengers Bengaluru,37,t20,"Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, Chandigarh",2025-04-20,2025-04-20 10:00:00,True,True
+37,01244c3f-ce16-42a7-bcee-31d75fcdfb4e,Mumbai Indians vs Chennai Super Kings,38,t20,"Wankhede Stadium, Mumbai",2025-04-20,2025-04-20 14:00:00,True,True
+38,a62d133e-9370-4575-b649-9415fea63aab,Kolkata Knight Riders vs Gujarat Titans,39,t20,"Eden Gardens, Kolkata",2025-04-21,2025-04-21 14:00:00,True,True
+39,47fd62f1-ca48-4c9c-9ded-0d2fcb5a64df,Lucknow Super Giants vs Delhi Capitals,40,t20,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2025-04-22,2025-04-22 14:00:00,True,True
+40,cec210ca-9184-43d3-9664-5ff0cbce7cd0,Sunrisers Hyderabad vs Mumbai Indians,41,t20,"Rajiv Gandhi International Stadium, Hyderabad",2025-04-23,2025-04-23 14:00:00,True,True
+41,9c1e5e4c-b72e-4db2-b2be-df9b4d27f539,Royal Challengers Bengaluru vs Rajasthan Royals,42,t20,"M.Chinnaswamy Stadium, Bengaluru",2025-04-24,2025-04-24 14:00:00,True,True
+42,92d38459-52b6-40a9-8508-f3dd2692a0bf,Chennai Super Kings vs Sunrisers Hyderabad,43,t20,"MA Chidambaram Stadium, Chennai",2025-04-25,2025-04-25 14:00:00,True,True
+43,3683354f-3c17-4346-9236-8d2bc474e7a5,Kolkata Knight Riders vs Punjab Kings,44,t20,"Eden Gardens, Kolkata",2025-04-26,2025-04-26 14:00:00,True,True
+44,eae7163d-b06c-41df-95fb-835fd5b9798b,Mumbai Indians vs Lucknow Super Giants,45,t20,"Wankhede Stadium, Mumbai",2025-04-27,2025-04-27 10:00:00,True,True
+45,04e8d307-7acd-4c3d-8117-b92ced6c583a,Delhi Capitals vs Royal Challengers Bengaluru,46,t20,"Arun Jaitley Stadium, Delhi",2025-04-27,2025-04-27 14:00:00,True,True
+46,32450f41-24d3-463a-9d37-e6df114b43df,Rajasthan Royals vs Gujarat Titans,47,t20,"Sawai Mansingh Stadium, Jaipur",2025-04-28,2025-04-28 14:00:00,True,True
+47,fa06c479-3015-4e58-b37c-9c6c076fab14,Delhi Capitals vs Kolkata Knight Riders,48,t20,"Arun Jaitley Stadium, Delhi",2025-04-29,2025-04-29 14:00:00,True,True
+48,9b3be8ba-8302-4051-87a8-9022037b9a84,Chennai Super Kings vs Punjab Kings,49,t20,"MA Chidambaram Stadium, Chennai",2025-04-30,2025-04-30 14:00:00,True,True
+49,d0b375d6-eb90-48f9-b8a3-37647a418ea2,Rajasthan Royals vs Mumbai Indians,50,t20,"Sawai Mansingh Stadium, Jaipur",2025-05-01,2025-05-01 14:00:00,True,True
+50,1a4b354c-8692-44d0-9b52-562da45bcce9,Gujarat Titans vs Sunrisers Hyderabad,51,t20,"Narendra Modi Stadium, Ahmedabad",2025-05-02,2025-05-02 14:00:00,True,True
+51,48e77e32-3016-4f17-9c99-a5663c5eb3e6,Royal Challengers Bengaluru vs Chennai Super Kings,52,t20,"M.Chinnaswamy Stadium, Bengaluru",2025-05-03,2025-05-03 14:00:00,True,True
+52,aeb65c00-9359-4bc0-827a-9d0365364d1b,Kolkata Knight Riders vs Rajasthan Royals,53,t20,"Eden Gardens, Kolkata",2025-05-04,2025-05-04 10:00:00,True,True
+53,df44cff0-d889-44a2-a63c-415c93b9d022,Punjab Kings vs Lucknow Super Giants,54,t20,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2025-05-04,2025-05-04 14:00:00,True,True
+54,4e4b259f-19b6-4405-9df7-b94ce3b0a2c9,Sunrisers Hyderabad vs Delhi Capitals,55,t20,"Rajiv Gandhi International Stadium, Hyderabad",2025-05-05,2025-05-05 14:00:00,True,True
+55,a97077e7-466a-46e8-b6e7-2b74731b1d42,Mumbai Indians vs Gujarat Titans,56,t20,"Wankhede Stadium, Mumbai",2025-05-06,2025-05-06 14:00:00,True,True
+56,96324bfb-686e-44b6-a48e-5bd71188d1b2,Kolkata Knight Riders vs Chennai Super Kings,57,t20,"Eden Gardens, Kolkata",2025-05-07,2025-05-07 14:00:00,True,True
+57,bceb4ff2-269d-47d3-a59d-211f18f59e59,Royal Challengers Bengaluru vs Kolkata Knight Riders,58,t20,"M.Chinnaswamy Stadium, Bengaluru",2025-05-17,2025-05-17 14:00:00,True,True
+58,ac58e81f-a8b1-48e9-b7a1-9990b1bb24c3,Rajasthan Royals vs Punjab Kings,59,t20,"Sawai Mansingh Stadium, Jaipur",2025-05-18,2025-05-18 10:00:00,True,True
+59,481f7248-302b-4aa4-9af8-45fd85afdf83,Delhi Capitals vs Gujarat Titans,60,t20,"Arun Jaitley Stadium, Delhi",2025-05-18,2025-05-18 14:00:00,True,True
+60,37ffb02f-3858-4afd-8229-62f18f88693f,Lucknow Super Giants vs Sunrisers Hyderabad,61,t20,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2025-05-19,2025-05-19 14:00:00,True,True
+61,347e27a7-5e40-428f-8afb-adfae1d5d3dd,Chennai Super Kings vs Rajasthan Royals,62,t20,"Arun Jaitley Stadium, Delhi",2025-05-20,2025-05-20 14:00:00,True,True
+62,a4109c61-bed5-47fd-badd-f7e1e1291b82,Mumbai Indians vs Delhi Capitals,63,t20,"Wankhede Stadium, Mumbai",2025-05-21,2025-05-21 14:00:00,True,True
+63,513ef018-fd16-4fe6-b6d6-d84631e810b9,Gujarat Titans vs Lucknow Super Giants,64,t20,"Narendra Modi Stadium, Ahmedabad",2025-05-22,2025-05-22 14:00:00,True,True
+64,20aacd15-ede1-4447-9b21-dd08e51900b2,Royal Challengers Bengaluru vs Sunrisers Hyderabad,65,t20,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2025-05-23,2025-05-23 14:00:00,True,True
+65,d14c8675-b2c6-4f20-920c-d44cc8d60fe7,Punjab Kings vs Delhi Capitals,66,t20,"Sawai Mansingh Stadium, Jaipur",2025-05-24,2025-05-24 14:00:00,True,True
+66,f16e5b1e-1437-475b-8e8c-07d1d736f8a7,Gujarat Titans vs Chennai Super Kings,67,t20,"Narendra Modi Stadium, Ahmedabad",2025-05-25,2025-05-25 10:00:00,True,True
+67,17f1c3f0-1ed8-4d84-8b8f-6a3e3357f47b,Sunrisers Hyderabad vs Kolkata Knight Riders,68,t20,"Arun Jaitley Stadium, Delhi",2025-05-25,2025-05-25 14:00:00,True,True
+68,2207d377-6fe1-4197-9fb1-744e48c7e2d1,Punjab Kings vs Mumbai Indians,69,t20,"Sawai Mansingh Stadium, Jaipur",2025-05-26,2025-05-26 14:00:00,True,True
+69,6f407b82-f31f-4e4e-bf65-763919972804,Lucknow Super Giants vs Royal Challengers Bengaluru,70,t20,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2025-05-27,2025-05-27 14:00:00,True,True
+70,bc3351d1-f950-4aa6-bb6f-473517a06885,Punjab Kings vs Royal Challengers Bengaluru,71,t20,"Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, Chandigarh",2025-05-29,2025-05-29 14:00:00,True,True
+71,21cf482e-bb64-4b40-b6e0-6b51c77ba464,Gujarat Titans vs Mumbai Indians,72,t20,"Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",2025-05-30,2025-05-30 14:00:00,True,True
+72,c8425e58-85a4-4e8e-a56c-8afae638effb,Punjab Kings vs Mumbai Indians,73,t20,"Narendra Modi Stadium, Ahmedabad",2025-06-01,2025-06-01 14:00:00,True,True
+73,38f4d432-1349-4223-87ab-b1279c553754,Royal Challengers Bengaluru vs Punjab Kings,74,t20,"Narendra Modi Stadium, Ahmedabad",2025-06-03,2025-06-03 14:00:00,True,True
