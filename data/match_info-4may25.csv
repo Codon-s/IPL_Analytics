@@ -1,0 +1,55 @@
+id,Team1,Team2,tossWinner,tossChoice,matchWinner,Innings1,r1,w1,o1,Innings2,r2,w2,o2
+cacf2d34-41b8-41dd-91ed-5183d880084c,Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bowl,Royal Challengers Bengaluru,Kolkata Knight Riders Inning 1,174,8,20,Royal Challengers Bengaluru Inning 1,177,3,16.2
+91b007f3-c0af-493f-808a-3f4ae2d66e33,Sunrisers Hyderabad,Rajasthan Royals,Rajasthan Royals,bowl,Sunrisers Hyderabad,Sunrisers Hyderabad Inning 1,286,6,20,Rajasthan Royals Inning 1,242,6,20.0
+208d68e5-3fab-4f3b-88e9-29ec4a02d3e2,Chennai Super Kings,Mumbai Indians,Chennai Super Kings,bowl,Chennai Super Kings,Mumbai Indians Inning 1,155,9,20,Chennai Super Kings Inning 1,158,6,19.1
+c6e97609-d9c1-46eb-805a-e282b34f3bb1,Delhi Capitals,Lucknow Super Giants,Delhi Capitals,bowl,Delhi Capitals,Lucknow Super Giants Inning 1,209,8,20,Delhi Capitals Inning 1,211,9,19.3
+83d70527-5fc4-4fad-8dd2-b88b385f379e,Gujarat Titans,Punjab Kings,Gujarat Titans,bowl,Punjab Kings,Punjab Kings Inning 1,243,5,20,Gujarat Titans Inning 1,232,5,20.0
+fd459f45-6e79-42c5-84e4-d046f291cacf,Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,bowl,Kolkata Knight Riders,Rajasthan Royals Inning 1,151,9,20,Kolkata Knight Riders Inning 1,153,2,17.3
+ab4e0813-1e78-467e-aca0-d80c5cfe7dbd,Sunrisers Hyderabad,Lucknow Super Giants,Lucknow Super Giants,bowl,Lucknow Super Giants,Lucknow Super Giants Inning 1,190,9,20,Sunrisers Hyderabad Inning 1,193,5,16.1
+7431523f-7ccb-4a4a-aed7-5c42fc08464c,Chennai Super Kings,Royal Challengers Bengaluru,Chennai Super Kings,bowl,Royal Challengers Bengaluru,Royal Challengers Bengaluru Inning 1,196,7,20,Chennai Super Kings Inning 1,146,8,20.0
+f5ed540f-15c7-4189-a5d4-e54be746a522,Gujarat Titans,Mumbai Indians,Mumbai Indians,bowl,Gujarat Titans,Gujarat Titans Inning 1,196,8,20,Mumbai Indians Inning 1,160,6,20.0
+af5cf1dd-b3d4-4e8d-8660-e5e27cd5202e,Delhi Capitals,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Delhi Capitals,Sunrisers Hyderabad Inning 1,163,10,18.4,Delhi Capitals Inning 1,166,3,16.0
+057ce3fb-8117-47fe-bf25-be0ed8a56dd0,Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,bowl,Rajasthan Royals,Rajasthan Royals Inning 1,182,9,20,Chennai Super Kings Inning 1,176,6,20.0
+075649ef-6ca8-4f50-8143-87814b828ea0,Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,bowl,Mumbai Indians,Kolkata Knight Riders Inning 1,116,10,16.2,Mumbai Indians Inning 1,121,2,12.5
+7896feec-8fd6-44ef-aee3-eabb679e6305,Lucknow Super Giants,Punjab Kings,Punjab Kings,bowl,Punjab Kings,Lucknow Super Giants Inning 1,171,7,20,Punjab Kings Inning 1,177,2,16.2
+64e88ffc-606f-4d4f-b848-310f1ec7a98a,Royal Challengers Bengaluru,Gujarat Titans,Gujarat Titans,bowl,Gujarat Titans,Royal Challengers Bengaluru Inning 1,169,8,20,Gujarat Titans Inning 1,170,2,17.5
+d5915da0-c08b-4122-bcb0-2c2e1e6e168a,Kolkata Knight Riders,Sunrisers Hyderabad,Sunrisers Hyderabad,bowl,Kolkata Knight Riders,Kolkata Knight Riders Inning 1,200,6,20,Sunrisers Hyderabad Inning 1,120,10,16.4
+5dc7a22f-5057-4895-bb98-965d9a1f004e,Lucknow Super Giants,Mumbai Indians,Mumbai Indians,bowl,Lucknow Super Giants,Lucknow Super Giants Inning 1,203,8,20,Mumbai Indians Inning 1,191,5,20.0
+f5dabb5b-a934-4666-a368-7134e991f569,Chennai Super Kings,Delhi Capitals,Delhi Capitals,bat,Delhi Capitals,Delhi Capitals Inning 1,183,6,20,Chennai Super Kings Inning 1,158,5,20.0
+b2e603ab-96f7-4711-ac9f-6a78e742237d,Punjab Kings,Rajasthan Royals,Punjab Kings,bowl,Rajasthan Royals,Rajasthan Royals Inning 1,205,4,20,Punjab Kings Inning 1,155,9,20.0
+3027ad1a-e7d8-4891-8ea0-1a56f81e8700,Sunrisers Hyderabad,Gujarat Titans,Gujarat Titans,bowl,Gujarat Titans,Sunrisers Hyderabad Inning 1,152,8,20,Gujarat Titans Inning 1,153,3,16.4
+0a5ebe67-67a3-41d2-bbc8-5fc94aef0529,Mumbai Indians,Royal Challengers Bengaluru,Mumbai Indians,bowl,Royal Challengers Bengaluru,Royal Challengers Bengaluru Inning 1,221,5,20,Mumbai Indians Inning 1,209,9,20.0
+2ac97990-6265-40e4-b93e-fcd24e89026c,Kolkata Knight Riders,Lucknow Super Giants,Kolkata Knight Riders,bowl,Lucknow Super Giants,Lucknow Super Giants Inning 1,238,3,20,Kolkata Knight Riders Inning 1,234,7,20.0
+56a88e0e-e844-41bd-ba65-3c905e36ba0d,Punjab Kings,Chennai Super Kings,Punjab Kings,bat,Punjab Kings,Punjab Kings Inning 1,219,6,20,Chennai Super Kings Inning 1,201,5,20.0
+71213f27-c274-48b0-97f7-ec74e895dcbe,Gujarat Titans,Rajasthan Royals,Rajasthan Royals,bowl,Gujarat Titans,Gujarat Titans Inning 1,217,6,20,Rajasthan Royals Inning 1,159,10,19.2
+3f309c2d-75dd-48bc-9d9f-e3979e252949,Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,bowl,Delhi Capitals,Royal Challengers Bengaluru Inning 1,163,7,20,Delhi Capitals Inning 1,169,4,17.5
+b39bbd39-c67f-4892-9a48-02e958946718,Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,bowl,Kolkata Knight Riders,Chennai Super Kings Inning 1,103,9,20,Kolkata Knight Riders Inning 1,107,2,10.1
+35938151-73ee-4969-8153-db8aabee3b90,Lucknow Super Giants,Gujarat Titans,Lucknow Super Giants,bowl,Lucknow Super Giants,Gujarat Titans Inning 1,180,6,20,Lucknow Super Giants Inning 1,186,4,19.3
+b13f129b-2596-429d-ad49-a1b0d102809b,Sunrisers Hyderabad,Punjab Kings,Punjab Kings,bat,Sunrisers Hyderabad,Punjab Kings Inning 1,245,6,20,Sunrisers Hyderabad Inning 1,247,2,18.3
+953420f4-982c-4dcb-b8f7-bbda5acd438d,Rajasthan Royals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bowl,Royal Challengers Bengaluru,Rajasthan Royals Inning 1,173,4,20,Royal Challengers Bengaluru Inning 1,175,1,17.3
+99c52578-1257-4834-9848-88cfec556836,Delhi Capitals,Mumbai Indians,Delhi Capitals,bowl,Mumbai Indians,Mumbai Indians Inning 1,205,5,20,Delhi Capitals Inning 1,193,10,19.0
+263c1103-33c0-4c05-864f-5dbcd29ead9b,Lucknow Super Giants,Chennai Super Kings,Chennai Super Kings,bowl,Chennai Super Kings,Lucknow Super Giants Inning 1,166,7,20,Chennai Super Kings Inning 1,168,5,19.3
+23f60d1b-2641-4a84-bb73-54d3aadfb294,Punjab Kings,Kolkata Knight Riders,Punjab Kings,bat,Punjab Kings,Punjab Kings Inning 1,111,10,15.3,Kolkata Knight Riders Inning 1,95,10,15.1
+3659022a-de1d-48fe-b68a-c62197297408,Delhi Capitals,Rajasthan Royals,Rajasthan Royals,bowl,Delhi Capitals,Delhi Capitals Inning 1,188,5,20,Rajasthan Royals Inning 1,188,4,20.0
+71756de6-bdef-4b23-801f-c6bec9604e07,Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,bowl,Mumbai Indians,Sunrisers Hyderabad Inning 1,162,5,20,Mumbai Indians Inning 1,166,6,18.1
+ebce77ae-63e1-46eb-8ff4-360ba8dc9bf2,Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,bowl,Punjab Kings,Royal Challengers Bengaluru Inning 1,95,9,14,Punjab Kings Inning 1,98,5,12.1
+71666b6c-a6f9-4e09-a9d9-7f3ddca832d6,Gujarat Titans,Delhi Capitals,Gujarat Titans,bowl,Gujarat Titans,Delhi Capitals Inning 1,203,8,20,Gujarat Titans Inning 1,204,3,19.2
+a007a070-6120-4e37-8bf9-c9582801a20b,Rajasthan Royals,Lucknow Super Giants,Lucknow Super Giants,bat,Lucknow Super Giants,Lucknow Super Giants Inning 1,180,5,20,Rajasthan Royals Inning 1,178,5,20.0
+4ace6d56-2e54-473e-a3c1-8bfcd06da6e2,Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bowl,Royal Challengers Bengaluru,Punjab Kings Inning 1,157,6,20,Royal Challengers Bengaluru Inning 1,159,3,18.5
+01244c3f-ce16-42a7-bcee-31d75fcdfb4e,Mumbai Indians,Chennai Super Kings,Mumbai Indians,bowl,Mumbai Indians,Chennai Super Kings Inning 1,176,5,20,Mumbai Indians Inning 1,177,1,15.4
+a62d133e-9370-4575-b649-9415fea63aab,Kolkata Knight Riders,Gujarat Titans,Kolkata Knight Riders,bowl,Gujarat Titans,Gujarat Titans Inning 1,198,3,20,Kolkata Knight Riders Inning 1,159,8,20.0
+47fd62f1-ca48-4c9c-9ded-0d2fcb5a64df,Lucknow Super Giants,Delhi Capitals,Delhi Capitals,bowl,Delhi Capitals,Lucknow Super Giants Inning 1,159,6,20,Delhi Capitals Inning 1,161,2,17.5
+cec210ca-9184-43d3-9664-5ff0cbce7cd0,Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,bowl,Mumbai Indians,Sunrisers Hyderabad Inning 1,143,8,20,Mumbai Indians Inning 1,146,3,15.4
+9c1e5e4c-b72e-4db2-b2be-df9b4d27f539,Royal Challengers Bengaluru,Rajasthan Royals,Rajasthan Royals,bowl,Royal Challengers Bengaluru,Royal Challengers Bengaluru Inning 1,205,5,20,Rajasthan Royals Inning 1,194,9,20.0
+92d38459-52b6-40a9-8508-f3dd2692a0bf,Chennai Super Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,bowl,Sunrisers Hyderabad,Chennai Super Kings Inning 1,154,10,19.5,Sunrisers Hyderabad Inning 1,155,5,18.4
+3683354f-3c17-4346-9236-8d2bc474e7a5,Kolkata Knight Riders,Punjab Kings,Punjab Kings,bat,No Winner,Punjab Kings Inning 1,201,4,20,Kolkata Knight Riders Inning 1,7,0,1.0
+eae7163d-b06c-41df-95fb-835fd5b9798b,Mumbai Indians,Lucknow Super Giants,Lucknow Super Giants,bowl,Mumbai Indians,Mumbai Indians Inning 1,215,7,20,Lucknow Super Giants Inning 1,161,10,20.0
+04e8d307-7acd-4c3d-8117-b92ced6c583a,Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bowl,Royal Challengers Bengaluru,Delhi Capitals Inning 1,162,8,20,Royal Challengers Bengaluru Inning 1,165,4,18.3
+32450f41-24d3-463a-9d37-e6df114b43df,Rajasthan Royals,Gujarat Titans,Rajasthan Royals,bowl,Rajasthan Royals,Gujarat Titans Inning 1,209,4,20,Rajasthan Royals Inning 1,212,2,15.5
+fa06c479-3015-4e58-b37c-9c6c076fab14,Delhi Capitals,Kolkata Knight Riders,Delhi Capitals,bowl,Kolkata Knight Riders,Kolkata Knight Riders Inning 1,204,9,20,Delhi Capitals Inning 1,190,9,20.0
+9b3be8ba-8302-4051-87a8-9022037b9a84,Chennai Super Kings,Punjab Kings,Punjab Kings,bowl,Punjab Kings,Chennai Super Kings Inning 1,190,10,19.2,Punjab Kings Inning 1,194,6,19.4
+d0b375d6-eb90-48f9-b8a3-37647a418ea2,Rajasthan Royals,Mumbai Indians,Rajasthan Royals,bowl,Mumbai Indians,Mumbai Indians Inning 1,217,2,20,Rajasthan Royals Inning 1,117,10,16.1
+1a4b354c-8692-44d0-9b52-562da45bcce9,Gujarat Titans,Sunrisers Hyderabad,Sunrisers Hyderabad,bowl,Gujarat Titans,Gujarat Titans Inning 1,224,6,20,Sunrisers Hyderabad Inning 1,186,6,20.0
+48e77e32-3016-4f17-9c99-a5663c5eb3e6,Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,bowl,Royal Challengers Bengaluru,Royal Challengers Bengaluru Inning 1,213,5,20,Chennai Super Kings Inning 1,211,5,20.0
+aeb65c00-9359-4bc0-827a-9d0365364d1b,Kolkata Knight Riders,Rajasthan Royals,Kolkata Knight Riders,bat,Kolkata Knight Riders,Kolkata Knight Riders Inning 1,206,4,20,Rajasthan Royals Inning 1,205,8,20.0
+df44cff0-d889-44a2-a63c-415c93b9d022,Punjab Kings,Lucknow Super Giants,Lucknow Super Giants,bowl,Punjab Kings,Punjab Kings Inning 1,236,5,20,Lucknow Super Giants Inning 1,199,7,20.0
