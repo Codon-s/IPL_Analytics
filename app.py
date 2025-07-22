@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 from src.Match_Analysis import no_of_wins, pair_analysis, venue_run, tosschoice_venue, tosschoice_bb
+from src.Team_Performance import sunburst, match_count,overseas_players, performance, Toss_performance,Toss_choice
 
 st.set_page_config(
     page_title = 'IPL Dashboard',
@@ -52,6 +53,34 @@ with tab2: #Team Performance
         'Select a Team: ',
         team_names
     )
+
+    col = st.columns((6, 4), gap='small')
+
+    with col[0]:
+        with st.container():
+            st.plotly_chart(match_count(team_name), use_container_width=True)
+        with st.container():
+            col2 = st.columns((4,6), gap='small')
+            with col2[0]:
+                st.write('Overseas Player:')
+                st.dataframe(overseas_players(team_name))
+            with col2[1]:
+                st.plotly_chart(sunburst(team_name), use_container_width=True)
+
+
+    with col[1]:
+        with st.container():
+            col3 = st.columns((4,6), gap='small')
+            with col3[0]:
+                st.plotly_chart(Toss_performance(team_name), use_container_width=True)
+            with col3[1]:
+                st.plotly_chart(Toss_choice(team_name), use_container_width=True)
+
+        #     st.plotly_chart(Toss_performance(team_name), use_container_width=True)
+        # with st.container():
+        #     st.plotly_chart(Toss_choice(team_name), use_container_width=True)
+        with st.container():
+            st.plotly_chart(performance(team_name), use_container_width=True)
 
 with tab3: #Match Analysis
     match_list = pd.read_csv('data/match_list-9jun25.csv')
