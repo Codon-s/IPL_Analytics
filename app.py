@@ -2,11 +2,11 @@
 import json
 import streamlit as st
 import pandas as pd
-from src.series_analysis import no_of_wins, pair_analysis, venue_run, tosschoice_bb
-from src.team_performance import (
+from series_analysis import no_of_wins, pair_analysis, venue_run, tosschoice_bb
+from team_performance import (
     sunburst, match_count, overseas_players, performance, toss_performance, toss_choice
     )
-from src.match_analysis import (
+from match_analysis import (
     dismissals, boundaries, batsman_perf, bowler_perf, fielder_perf
 )
 
