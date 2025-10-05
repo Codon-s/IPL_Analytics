@@ -8,8 +8,8 @@ import pandas as pd
 shared_color = pc.sequential.Mint
 
 # Reading data
-df=pd.read_csv('../iplanalytics/data/match_info-10jun25.csv')
-kf=pd.read_csv('../iplanalytics/data/match_list-9jun25.csv')
+df=pd.read_csv('./data/match_info-10jun25.csv')
+kf=pd.read_csv('./data/match_list-9jun25.csv')
 kf.rename(columns={'MatchID':'id'}, inplace=True)
 ds=pd.merge(df,kf, on='id')
 
