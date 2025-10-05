@@ -9,8 +9,8 @@ import numpy as np
 shared_color=pc.sequential.Mint
 
 # Data Ingestion
-df1 = pd.read_csv("../iplanalytics/data/match_info-10jun25.csv")
-df2 = pd.read_csv("../iplanalytics/data/match_list-9jun25.csv")
+df1 = pd.read_csv("./data/match_info-10jun25.csv")
+df2 = pd.read_csv("./data/match_list-9jun25.csv")
 df = pd.merge(df1, df2, left_on='id', right_on='MatchID', how='inner')
 df['Cities'] = df.MatchVenue.str.split(',', n=1, expand=True)[1]
 
