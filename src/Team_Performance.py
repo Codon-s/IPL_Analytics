@@ -1,3 +1,4 @@
+''' IPL Team Performance Analysis '''
 import plotly.express as px
 import plotly.graph_objects as go
 import plotly.colors as pc
@@ -14,6 +15,7 @@ df = pd.merge(df1, df2, left_on='id', right_on='MatchID', how='inner')
 df['Cities'] = df.MatchVenue.str.split(',', n=1, expand=True)[1]
 
 def fetch_team(name):
+    ''' Fetching team data for files '''
     team = pd.read_csv(f'../iplanalytics/data/squad/{name}.csv')
     team['style'] = np.select(
         [
@@ -36,9 +38,9 @@ def fetch_team(name):
     )
     return team
 
-# Visulization
-
+# Visulizations
 def sunburst(team_name):
+    ''' Sunburst Chart for Team Players Distribution '''
     data = fetch_team(team_name)
     fig = px.sunburst(
         data,
@@ -46,38 +48,32 @@ def sunburst(team_name):
         color_discrete_sequence=shared_color
     )
 
-        
     fig.update_layout(
         title=dict(
         text='Players Distribution',
         x=0.5,
         xanchor='center'
-        ),
-        # # title='Player Distribution',
-        # title_font_size=20,
-        width=550,
-        height=550,    
-        #uniformtext_minsize=12,
-        #uniformtext_mode='hide',
+        )
     )
 
     return fig
 
-def match_count(team_name, df=df):
-    # --- Venue average score (line) ---
+def match_count(team_name, dataframe=df):
+    ''' Match Count and Average Runs by City '''
+    # Venue average score (line)
     team_name = team_name.replace('_', ' ')
-    data = df.loc[(df.Team1==team_name) | (df.Team2==team_name)]
+    data = dataframe.loc[(dataframe.Team1==team_name) | (dataframe.Team2==team_name)]
     data['Cities'] = data.MatchVenue.str.split(',', n=1, expand=True)[1]
 
-    Venue_score = data.groupby('Cities')[['r1','r2']].mean().max(axis=1).reset_index()
-    Venue_score = Venue_score.rename(columns={0: 'Avg_Runs'})
+    venue_score = data.groupby('Cities')[['r1','r2']].mean().max(axis=1).reset_index()
+    venue_score = venue_score.rename(columns={0: 'Avg_Runs'})
 
-    # --- Match count per city (bar) ---
-    match_count = data.groupby('Cities')[['MatchName']].count().reset_index()
-    match_count = match_count.rename(columns={'MatchName': 'Match_Count'})
+    # Match count per city (bar)
+    count = data.groupby('Cities')[['MatchName']].count().reset_index()
+    count = count.rename(columns={'MatchName': 'Match_Count'})
 
-    # --- Merge both on 'Cities' ---
-    combined = pd.merge(match_count, Venue_score, on='Cities')
+    # Merge both on 'Cities'
+    combined = pd.merge(count, venue_score, on='Cities')
 
     fig = go.Figure()
 
@@ -86,7 +82,6 @@ def match_count(team_name, df=df):
         x=combined['Cities'],
         y=combined['Match_Count'],
         name='Match Count',
-        # marker_color='indigo',
         yaxis='y',
         marker=dict(color=shared_color[:len(combined)])
     ))
@@ -96,8 +91,7 @@ def match_count(team_name, df=df):
         x=combined['Cities'],
         y=combined['Avg_Runs'],
         name='Average Runs',
-        mode='lines+markers',
-        # line=dict(color='orange', width=3),
+        mode='lines',
         yaxis='y2',
         marker=dict(color=shared_color[:len(combined)])
     ))
@@ -110,34 +104,32 @@ def match_count(team_name, df=df):
         yaxis=dict(title='Match Count', side='left'),
         yaxis2=dict(title='Average Runs', overlaying='y', side='right'),
         legend=dict(x=0.1, y=1.1, orientation='h'),
-        # template='plotly_white',
-        # width=1000,
-        height=420
     )
 
     return fig
 
-
 def overseas_players(team_name):
+    ''' Overseas Players Dataframe '''
     data = fetch_team(team_name)
-    overseas_players = data[data['country'] != 'India'][['name', 'country', 'role']]
-    overseas_players.reset_index(drop=True, inplace=True)
-    overseas_players.attrs["title"] = f"Overseas Players of {team_name}"
-    return overseas_players
+    players = data[data['country'] != 'India'][['name', 'country', 'role']]
+    players.reset_index(drop=True, inplace=True)
+    players.attrs["title"] = f"Overseas Players of {team_name}"
+    return players
 
-def performance (team_name,df=df):
+def performance (team_name,dataframe=df):
+    ''' Matches Played vs Won by City '''
     team_name = team_name.replace('_', ' ')
-    data = df.loc[(df.Team1==team_name) | (df.Team2==team_name)]
+    data = dataframe.loc[(dataframe.Team1==team_name) | (dataframe.Team2==team_name)]
     data['Cities'] = data.MatchVenue.str.split(',', n=1, expand=True)[1]
 
-    Matches_won=data.loc[(data.matchWinner==team_name)]
+    matches_won=data.loc[(data.matchWinner==team_name)]
 
-    won=Matches_won.groupby('Cities')[['MatchName']].count().reset_index()
+    won=matches_won.groupby('Cities')[['MatchName']].count().reset_index()
     y=data.groupby('Cities')[['MatchName']].count().reset_index()
     combined1 = pd.merge(won, y, on='Cities', how='outer')
     combined1 = combined1.rename(columns={'MatchName_x': 'Won','MatchName_y': 'Played'})
 
-     # Replace NaN with 0 for plotting
+    # Replace NaN with 0 for plotting
     combined1['Won'] = combined1['Won'].fillna(0)
 
     # Create the plot
@@ -149,8 +141,8 @@ def performance (team_name,df=df):
         y=combined1['Played'],
         mode='lines+markers',
         name='Matches Played',
-        # line=dict(color='blue', width=3),
-        marker=dict(color=shared_color[:len(combined1)])
+        line=dict(color=shared_color[0], dash='dash'),
+        marker=dict(color='blue')
     ))
 
     # Line for Matches Won
@@ -159,34 +151,30 @@ def performance (team_name,df=df):
         y=combined1['Won'],
         mode='lines+markers',
         name='Matches Won',
-        # line=dict(color='green', width=3, dash='dash'),
-        marker=dict(color=shared_color[:len(combined1)])
+        line=dict(color=shared_color[3], width=3),
+        marker=dict(color='green')
     ))
 
     # Update layout
     fig.update_layout(
         title='Matches Played vs Won by City',
         title_x=0.3,
-        # xaxis_title='City',
         yaxis_title='Count',
-        # template='plotly_white',
-        width=1000,
-        height=400,
         legend=dict(
         x=0.20,
         y=0.80,
         xanchor='center',
         yanchor='top',
-        orientation='h'  # optional: makes legend horizontal
+        orientation='h'
         )
     )
-    
 
     return fig
 
-def Toss_performance(team_name, df=df):
+def toss_performance(team_name, dataframe=df):
+    ''' Toss Win Percentage '''
     team_name = team_name.replace('_', ' ')
-    data = df.loc[(df.Team1==team_name) | (df.Team2==team_name)]
+    data = dataframe.loc[(dataframe.Team1==team_name) | (dataframe.Team2==team_name)]
     data['Cities'] = data.MatchVenue.str.split(',', n=1, expand=True)[1]
 
     tosses = data[(data['Team1'] == team_name) | (data['Team2'] == team_name)]
@@ -204,27 +192,25 @@ def Toss_performance(team_name, df=df):
         labels=['Toss Won', 'Toss Lost'],
         values=[wins, losses],
         hole=0.5,
-        
+        marker_colors=shared_color[:2]
     ))
+
     fig.update_layout(
         title="Toss Win Percentage",
         title_x=0.2,
-        height=450,
-        # width=500,
         legend=dict(
         orientation='h',
         x=0.5,
         xanchor='center',
         y=1.1
-    )
-
-    )
+    ))
 
     return fig
 
-def Toss_choice(team_name,df=df):
+def toss_choice(team_name,dataframe=df):
+    ''' Toss Choice Analysis (Bat vs Bowl) '''
     team_name = team_name.replace('_', ' ')
-    data = df.loc[(df.Team1==team_name) | (df.Team2==team_name)]
+    data = dataframe.loc[(dataframe.Team1==team_name) | (dataframe.Team2==team_name)]
     data['Cities'] = data.MatchVenue.str.split(',', n=1, expand=True)[1]
 
     tosses = data[(data['Team1'] == team_name) | (data['Team2'] == team_name)]
@@ -236,9 +222,13 @@ def Toss_choice(team_name,df=df):
     choice_counts = toss_wins['tossChoice'].value_counts().reset_index()
     choice_counts.columns = ['Toss Choice', 'Count']
 
-
     fig = go.Figure(
-        go.Bar(name='Team', x=choice_counts['Toss Choice'], y=choice_counts['Count'], marker=dict(color=shared_color[:len(choice_counts)]))
+        go.Bar(
+            name='Team',
+            x=choice_counts['Toss Choice'],
+            y=choice_counts['Count'],
+            marker=dict(color=shared_color[:len(choice_counts)])
+        )
     )
 
     fig.update_layout(
@@ -247,8 +237,7 @@ def Toss_choice(team_name,df=df):
         xaxis_title='Toss Choice',
         yaxis_title='Count',
         barmode='group',
-        height=420,
-        width=50,
         template='plotly_white'
     )
+
     return fig

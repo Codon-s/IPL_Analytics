@@ -1,142 +1,231 @@
-import plotly.express as px
+''' IPL Match Analysis '''
 import plotly.graph_objects as go
 import plotly.colors as pc
-import pandas as pd
 
-# Initializing colors
-shared_color = pc.sequential.Mint
+color = pc.sequential.Mint
 
-# Reading data
-df=pd.read_csv('../iplanalytics/data/match_info-10jun25.csv')
-kf=pd.read_csv('../iplanalytics/data/match_list-9jun25.csv')
-kf.rename(columns={'MatchID':'id'}, inplace=True)
-ds=pd.merge(df,kf, on='id')
+def dismissals(data, theme=None):
+    ''' Distribution of Dismissal Types '''
+    if theme is None:
+        theme = color
 
-# Number of Wins by Each Team
-match_counts = ds['matchWinner'].value_counts().reset_index()
-match_counts.columns = ['Match Winner', 'Match Count']
+    fig = go.Figure()
 
-no_of_wins = px.bar(
-    match_counts,
-    x='Match Count',
-    y='Match Winner',
-    orientation='h',
-    labels={'Match Winner': 'Match Winner', 'Match Count': 'Match Count'},
-    color='Match Winner',
-    title="Number of Wins by Each Team",
-    color_discrete_sequence=shared_color
-)
+    fig.add_trace(
+        go.Pie(
+            labels = data.index,
+            values = data.values,
+            name='Dismissal',
+            hole=0.4,
+            marker=dict(colors=theme[:len(data)])
+        )
+    )
 
-no_of_wins.update_layout(showlegend=False)
+    fig.update_layout(
+        title = 'Dismissals',
+        xaxis_title = 'Dismissal Type',
+        yaxis_title = 'Count',
+        legend_title = 'Dismissal Type',
+        plot_bgcolor = 'rgba(0,0,0,0)',
+        legend = dict(
+            x = 0.5,
+            y = -0.2,
+            orientation = 'h',
+            xanchor = 'center'
+        )
+    )
 
-# match count venue(line)and max runs at match venue 
+    return fig
 
-match_venue=ds.groupby('MatchVenue')[['r1','r2']].max().max(axis=1).reset_index()
-venue_count = ds['MatchVenue'].value_counts()
-venue_count = venue_count.reset_index()
-bar_line = pd.merge(match_venue, venue_count, on='MatchVenue')
-bar_line['MatchVenue'] = bar_line['MatchVenue'].str.split(',', n=1).str[1]
+def boundaries(data, theme=None):
+    ''' Distribution of Boundaries Scored '''
+    if theme is None:
+        theme = color
 
-venue_run = go.Figure()
+    fig = go.Figure()
 
-venue_run.add_trace(go.Bar(
-    x = bar_line.MatchVenue,
-    y = bar_line['count'],
-    yaxis = 'y',
-    marker=dict(color=shared_color[:len(bar_line)])
-))
+    fig.add_trace(
+        go.Pie(
+            labels = data[['4s', '6s']].columns,
+            values = [data['4s'].sum(), data['6s'].sum()],
+            name='Boundary',
+            hole=0.4,
+            marker=dict(colors=theme[:len(data)]),
+        )
+    )
 
-venue_run.add_trace(go.Scatter(
-    x = bar_line.MatchVenue,
-    y = bar_line[0],
-    yaxis = 'y2',
-    marker=dict(color=shared_color[:len(bar_line)])
-))
+    fig.update_layout(
+        title = 'Boundaries',
+        xaxis_title = 'Boundary Type',
+        yaxis_title = 'Count',
+        legend_title = 'Boundary Type',
+        plot_bgcolor = 'rgba(0,0,0,0)',
+        legend = dict(
+            x = 0.5,
+            y = -0.2,
+            orientation = 'h',
+            xanchor = 'center'
+        )
+    )
 
-venue_run.update_layout(
-    xaxis = dict(title = 'Match Venue'),
-    yaxis =dict(title= 'Match Count', side = 'left'),
-    yaxis2 = dict(title='Max Runs', overlaying = 'y', side = 'right'),
-    legend = dict(x = 0.1, y = 1.1, orientation = 'h')
-)
+    return fig
 
+def batsman_perf(data, theme=None):
+    ''' Batsman Performance: Runs and Strike Rate '''
+    if theme is None:
+        theme = color
 
-# Pair analysis
+    fig = go.Figure()
 
-pair_analysis = pd.DataFrame(columns=[
-    'Team',
-    'Matches_Played',
-    'Matches_Won',
-    'Dominating'
-])
+    fig.add_trace(
+        go.Bar(
+            x = data['batsman'],
+            y = data['r'],
+            name = 'Runs',
+            yaxis = 'y', # left y-axis
+            marker_color = theme[:data.shape[0]]
+        )
+    )
 
-teams = df['Team1'].unique().tolist()
+    fig.add_trace(
+        go.Scatter(
+            x = data['batsman'],
+            y = data['sr'],
+            name = 'Strike Rate',
+            mode = 'lines',
+            yaxis = 'y2', # right y-axis
+            marker_color = 'blue'
+        )
+    )
 
-for i in teams:
-    
-    matches_played = df.loc[(df['Team1'] == i) | (df['Team2'] == i)].shape[0]
-    a = df.loc[(df['matchWinner'] == i)]
-    matches_won = a.shape[0]
-    t1 = a['Team1'].unique().tolist()
-    t2 = a['Team2'].unique().tolist()
-    domination = list(set(t1) & set(t2))
-    domination.remove(i)
-    
-    pair_analysis.loc[pair_analysis.shape[0]] = [i, matches_played, matches_won, domination]
+    fig.update_layout(
+        title_text = 'Batsman Performance (Runs and Strike Rate)',
+        xaxis = dict(
+            title = 'Batsman'
+        ),
+        yaxis=dict(
+            title = 'Runs'
+        ),
+        yaxis2=dict(
+            title='Strike Rate',
+            overlaying='y',
+            side='right',
+            rangemode = 'tozero'
+        ),
+        legend = dict(
+            x = 0.5,
+            y = 1.1,
+            orientation = 'h',
+            xanchor = 'center'
+        ),
+        plot_bgcolor = 'rgba(0,0,0,0)'
+    )
 
-#toss choice by match venue (bat & bowl)
-ct=pd.crosstab(index=ds.MatchVenue,columns=ds.tossChoice)
-ct = ct.reset_index() 
-long_df = ct.melt(id_vars='MatchVenue', var_name='Toss Choice', value_name='Count')
+    return fig
 
-tosschoice_bb = px.sunburst(
-    long_df,
-    path=['Toss Choice', 'MatchVenue'],  
-    values='Count',
-    color='Toss Choice',
-    title='Toss Choices by Match Venue',
-    color_discrete_sequence=shared_color
-)
+def bowler_perf(data, theme=None):
+    ''' Bowler Performance: Runs Conceded including Extras and Economy Rate '''
+    if theme is None:
+        theme = color
 
- #toss choice by each team(team1)vertical bar graph
-team1 = pd.crosstab(index=ds.tossChoice, columns=ds.Team1)
-teams = team1.columns.tolist()
-color_map = {team: shared_color[i % len(shared_color)] for i, team in enumerate(teams)}
-tosschoice_venue = go.Figure()
+    fig = go.Figure()
 
-for team in team1.columns:
-    tosschoice_venue.add_trace(go.Bar(
-        x=team1.index,        # Toss choices: bat, field
-        y=team1[team],        # Count values
-        name=team,
-        marker_color=color_map[team]            
-    ))
+    fig.add_trace(
+        go.Bar(
+            x = data['bowler'],
+            y = data['r'],
+            name = 'Runs Conceded',
+            yaxis = 'y', # left y-axis
+            marker_color = theme[:data.shape[0]]
+        )
+    )
 
-tosschoice_venue.update_layout(
-    barmode='stack',
-    title='Toss Choices by Each Team (Team1)',
-    xaxis_title='Toss Choice',
-    yaxis_title='Count',
-    legend_title='Team1'
-)
+    fig.add_trace(
+        go.Bar(
+            x = data['bowler'],
+            y = data['extras'],
+            name = 'extras',
+            yaxis = 'y', # left y-axis
+            marker_color = 'red'
+        )
+    )
 
-# #toss choice by match venue(team1)horizontal graph
-# team1 = pd.crosstab(index=ds.tossChoice, columns=ds.Team1)
+    fig.add_trace(
+        go.Scatter(
+            x = data['bowler'],
+            y = data['eco'],
+            name = 'Economy Rate',
+            mode = 'lines',
+            yaxis = 'y2', # right y-axis
+            marker_color = 'blue'
+        )
+    )
 
-# tosschoice_venue = go.Figure()
+    fig.update_layout(
+        barmode = 'group',
+        title = 'Bowler Performance (Runs Conceded including Extras)',
+        xaxis_title = 'Bowler',
+        plot_bgcolor = 'rgba(0,0,0,0)',
+        xaxis = dict(
+            title = 'Bowler'
+        ),
+        yaxis_title = 'Runs',
+        yaxis = dict(
+            title = 'Runs Conceded'
+        ),
+        yaxis2 = dict(
+            title = 'Economy Rate',
+            overlaying = 'y',
+            side = 'right',
+            rangemode = 'tozero'
+        ),
+        legend_title = 'Runs Conceded and Economy Rate',
+        legend = dict(
+            x = 0.5,
+            y = 1.1,
+            orientation = 'h',
+            xanchor = 'center'
+        )
+    )
 
-# for team in team1.columns:
-#     tosschoice_venue.add_trace(go.Bar(
-#         y=team1.index,        
-#         x=team1[team],        
-#         name=team,
-#         orientation='h'       
-#     ))
+    return fig
 
-# tosschoice_venue.update_layout(
-#     barmode='stack',
-#     title='Toss Choices by Each Team',
-#     xaxis_title='Count',
-#     yaxis_title='Toss Choice',
-#     legend_title='Team1'
-# )
+def fielder_perf(data, theme=None):
+    ''' Fielder Performance: Catches by Catcher vs Batsman '''
+    if theme is None:
+        theme = color
+
+    catch_df = data.groupby(['catcher', 'batsman']).size().reset_index(name='catches')
+
+    pivot_df = catch_df.pivot(index='catcher', columns='batsman', values='catches').fillna(0)
+
+    fig = go.Figure()
+
+    for batsman in pivot_df.columns:
+        fig.add_trace(
+            go.Bar(
+                x = pivot_df.index,
+                y = pivot_df[batsman],
+                name = batsman,
+                marker_color = theme[:len(pivot_df)],
+                hovertemplate = f'Batsman: {batsman}<extra></extra>'
+            )
+        )
+
+    fig.update_layout(
+        title = 'Catches by Fielder (catcher) vs Batsman',
+        xaxis_title = 'Catcher',
+        yaxis_title = 'Number of Catches',
+        barmode = 'stack',
+        legend_title = 'Batsman',
+        legend = dict(
+            x = 0.5,
+            y = 1.1,
+            orientation = 'h',
+            xanchor = 'center'
+        ),
+        showlegend = False,
+        plot_bgcolor = 'rgba(0,0,0,0)'
+    )
+
+    return fig
