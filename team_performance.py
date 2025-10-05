@@ -16,7 +16,7 @@ df['Cities'] = df.MatchVenue.str.split(',', n=1, expand=True)[1]
 
 def fetch_team(name):
     ''' Fetching team data for files '''
-    team = pd.read_csv(f'../iplanalytics/data/squad/{name}.csv')
+    team = pd.read_csv(f'./data/squad/{name}.csv')
     team['style'] = np.select(
         [
             team.role.str.lower() == 'bowler',
